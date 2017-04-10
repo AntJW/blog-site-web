@@ -1,0 +1,43 @@
+
+<nav-bar></nav-bar>
+
+<intro-header [backgroundImgUrl]="backgroundImgUrl" [headerMessage]="headerMessage" [subheaderMessage]="subheaderMessage"></intro-header>
+
+<!-- Main Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div *ngFor="let post of pagedPosts">
+                <div class="post-preview">
+                    <a [routerLink]="['/post', post._id.$oid]">
+                        <h2 class="post-title">
+                            {{ post.Title }}
+                        </h2>
+                        <h3 class="post-subtitle">
+                            <div [innerHTML]="getSubString(post.Body)"></div>
+                        </h3>
+                    </a>
+                    <p class="post-meta">Posted by <a href="{{ twitter }}">{{ post.Author.FirstName }}</a> on {{ post.CreatedOn | getDatetime | date:'yMMMMd' }}
+                        <br/>   <span class="label label-default" id="post-labels" *ngFor="let tag of post.Tags">{{ tag }}</span>
+                    </p>
+                </div>
+                <hr>
+            </div>
+            <!-- Pager -->
+            <ul class="pager">
+                <li class="previous clickable" [ngClass]="{disabled:pager.currentPage === 1}">
+                    <!--<li class="previous clickable" *ngIf="pager.currentPage != 1">-->
+                    <a (click)="setPage(pager.currentPage - 1)" class="col-xs-12 col-sm-4 col-md-4 col-lg-4">&larr; Newer Posts</a>
+                </li>
+                <li id="pageNumbers"><a>{{ pager.currentPage }} of {{ pager.totalPages }}</a></li>
+                <li class="next clickable" [ngClass]="{disabled:pager.currentPage === pager.totalPages}">
+                    <a (click)="setPage(pager.currentPage + 1)" class="col-xs-12 col-sm-4 col-md-4 col-lg-4">Older Posts &rarr;</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<footer-section></footer-section>
+
+

@@ -1,0 +1,46 @@
+<nav-bar></nav-bar>
+
+<intro-header [backgroundImgUrl]="backgroundImgUrl" [headerMessage]="headerMessage" [subheaderMessage]="subheaderMessage">
+</intro-header>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <h1 align="center">GRRRRR!!!</h1>
+      <p *ngIf="errorMessage" class="alert alert-danger"> {{ errorMessage }} </p>
+      <form (ngSubmit)="onSubmit()" #userSignUpForm="ngForm" novalidate> 
+
+        <div class="row control-group">
+            <div class="form-group col-xs-12 floating-label-form-group controls">
+                <label>Username</label>
+          <input class="form-control" id="email" placeholder="Email or Username" 
+                  required oninvalid="setCustomValidity('testing')" name="email" [(ngModel)]="user.Email" 
+                  #email="ngModel" pattern="[^%#!$&*()+/|`~=?'\<>, ]{1,50}" >
+            </div>
+            <div [hidden]="email.valid || email.pristine" class="alert alert-danger">
+                    Valid email/username required
+            </div>
+        </div>
+
+        <div class="row control-group">
+            <div class="form-group col-xs-12 floating-label-form-group controls">
+                <label>Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Password" required 
+                  name="password" [(ngModel)]="user.Password" #password="ngModel"  minlength="1" maxlength="50">
+            </div>
+            <div [hidden]="password.valid || password.pristine" class="alert alert-danger">
+                    Password required
+            </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="form-group col-xs-12">
+            <button type="submit" class="btn btn-default" [disabled]="!userSignUpForm.form.valid">Login</button>
+          </div>
+        </div>
+      </form>
+  </div>
+  </div>
+</div>
+
+<footer-section></footer-section>

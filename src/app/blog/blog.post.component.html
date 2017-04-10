@@ -1,0 +1,20 @@
+<nav-bar-invert></nav-bar-invert>
+
+<div class="container" id="text-container">
+    <div class="row">
+        <div *ngFor="let post of onePost" class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <h2 class="post-title"> {{ post.Title }} </h2>
+            <p class="post-meta">Posted by <a href="{{ twitter }}">{{ post.Author.FirstName }}</a> | {{ post.CreatedOn | getDatetime | date:'yMMMMd' }}
+                <br/> 
+                
+                <span class="label label-default" id="post-labels" *ngFor="let tag of post.Tags">{{ tag }}</span>
+               
+            </p>
+            <div [innerHTML]="post.Body"></div>
+            
+        </div>
+    </div>
+</div>
+
+
+<footer-section></footer-section>

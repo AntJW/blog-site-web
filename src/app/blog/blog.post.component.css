@@ -1,0 +1,39 @@
+
+#text-container {
+    margin-top: 70px;
+
+}
+#post-labels {
+    margin-right: 5px;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-style: normal;
+}
+.post-meta {
+  color: #777777;
+  font-size: 18px;
+  margin-top: 0;
+}
+.post-meta > a {
+  text-decoration: none;
+  color: #333333;
+  font-style: italic;
+}
+.post-meta > a:hover,
+.post-meta > a:focus {
+  color: #0085A1;
+  text-decoration: underline;
+}
+.label-default {
+  background-color: #bdbdbd;
+  color: white;
+}
+#post-body {
+  margin: 0;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+@media only screen and (min-width: 768px) {
+  .post-title {
+    font-size: 36px;
+  }
+}
