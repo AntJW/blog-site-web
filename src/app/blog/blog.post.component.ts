@@ -14,7 +14,8 @@ export class BlogPostComponent implements OnInit {
     onePost: IPosts[];
     twitter: string = "https://twitter.com/ant_man01";
     errorMessage: string;
-
+    pageIdentifier: string;
+    pageUrl: string = 'http://localhost:4200/post/'
     constructor(private _activatedRoute: ActivatedRoute, private _blogPostService: BlogPostService, 
                 private _sharedService: SharedService) {}
 
@@ -24,6 +25,7 @@ export class BlogPostComponent implements OnInit {
             this._blogPostService.getOnePost(id).subscribe(
                 results => {
                     this.onePost = results;
+                    this.pageIdentifier = id;
                 },
                 error => {
                     this.errorMessage = "Sorry, error occured. Please try refreshing page.";

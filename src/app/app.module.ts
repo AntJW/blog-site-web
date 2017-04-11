@@ -25,6 +25,7 @@ import { LoginComponent } from './auth/auth.login.component';
 import { AuthLoginService } from './auth/auth.service';
 import { CreatePostComponent } from './blog/blog.create.component';
 import { BlogPostComponent } from './blog/blog.post.component';
+import { DisqusModule } from 'angular2-disqus';
 
 // Observable class extensions
 import 'rxjs/add/observable/of';
@@ -46,7 +47,8 @@ import 'rxjs/add/operator/switchMap';
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule
+    AppRoutingModule,
+    DisqusModule
   ],
   providers: [ContactService, SharedService, LoggerService, UploaderService, PagerService, BlogPostService, 
   AuthLoginService, DatePipe, AuthGuard
