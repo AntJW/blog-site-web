@@ -30,7 +30,6 @@ export class ContactComponent implements OnInit{
 
         this._contactService.postContactMsg(this.contactMsg).subscribe(
             result => {
-                console.log(result)
                 this.successMessage = result['success_message'];
             },
             error => {

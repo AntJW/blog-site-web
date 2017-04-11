@@ -13,6 +13,7 @@ import { PagerService } from "../shared/pagination.service";
 export class BlogPostComponent implements OnInit {
     onePost: IPosts[];
     twitter: string = "https://twitter.com/ant_man01";
+    errorMessage: string;
 
     constructor(private _activatedRoute: ActivatedRoute, private _blogPostService: BlogPostService, 
                 private _sharedService: SharedService) {}
@@ -23,10 +24,9 @@ export class BlogPostComponent implements OnInit {
             this._blogPostService.getOnePost(id).subscribe(
                 results => {
                     this.onePost = results;
-                    console.log(this.onePost)
                 },
                 error => {
-                    console.log("Error occured in component")
+                    this.errorMessage = "Sorry, error occured. Please try refreshing page.";
                 }
             )
         })

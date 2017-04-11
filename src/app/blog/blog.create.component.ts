@@ -30,7 +30,6 @@ export class CreatePostComponent implements OnInit{
 
         this.newPost.CreatedOn = {"DatetimeUTC": currentDatetime, "TimeOffset": offset};
         this.newPost.Tags = this.newPost.Tags.toString().replace(/ /g, '').split(',');
-        console.log(offset)
    
         this._blogPostService.createNewBlogPost(this.newPost).subscribe(
             result => {

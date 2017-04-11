@@ -53,7 +53,7 @@
                     <div class="form-group col-xs-12 floating-label-form-group controls">
                         <label>Message</label>
                         <textarea [(ngModel)]="contactMsg.Message" rows="5" class="form-control" placeholder="Message" 
-                        id="message" #message="ngModel" required name="message" maxlength="300"></textarea>
+                        id="message" #message="ngModel" required name="message" maxlength="1000"></textarea>
                         <p class="help-block text-danger"></p>
                     </div>
                     <div [hidden]="message.valid || message.pristine" class="alert alert-danger">

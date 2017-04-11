@@ -18,6 +18,7 @@ export class BlogComponent implements OnInit {
     pagedPosts: IPosts[];
     pager: any = {}
     twitter: string = "https://twitter.com/ant_man01";
+    errorMessage: string;
 
     constructor(private _activatedRoute: ActivatedRoute, private _blogPostService: BlogPostService, 
                 private _sharedService: SharedService, private _pagerService: PagerService) {}
@@ -26,12 +27,12 @@ export class BlogComponent implements OnInit {
         this._blogPostService.getBlogPosts().subscribe(
             results => {
                 this.allPosts = results;
-               
+
                 // initialize to page 1
                 this.setPage(1);
             },
             error => {
-                console.log("Error occured in component")
+                this.errorMessage = "Sorry, error occured. Please try refreshing page.";
             }
         )
     }
