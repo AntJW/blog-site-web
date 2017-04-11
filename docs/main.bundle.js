@@ -42,7 +42,7 @@ var SharedService = (function () {
     return SharedService;
 }());
 SharedService = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]) === "function" && _a || Object])
 ], SharedService);
 
@@ -65,7 +65,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].production) {
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["a" /* enableProdMode */])();
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["enableProdMode"])();
 }
 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_2__app_app_module__["a" /* AppModule */]);
 //# sourceMappingURL=main.js.map
@@ -93,9 +93,9 @@ var AppComponent = (function () {
     return AppComponent;
 }());
 AppComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-root',
-        template: __webpack_require__(193),
+        template: __webpack_require__(195),
     })
 ], AppComponent);
 
@@ -131,18 +131,20 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__auth_auth_login_component__ = __webpack_require__(65);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__blog_blog_create_component__ = __webpack_require__(67);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__blog_blog_post_component__ = __webpack_require__(68);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24_rxjs_add_observable_of__ = __webpack_require__(207);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24_rxjs_add_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_24_rxjs_add_observable_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25_rxjs_add_observable_throw__ = __webpack_require__(208);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25_rxjs_add_observable_throw___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_25_rxjs_add_observable_throw__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26_rxjs_add_operator_map__ = __webpack_require__(211);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_26_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27_rxjs_add_operator_catch__ = __webpack_require__(209);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_27_rxjs_add_operator_catch__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28_rxjs_add_operator_do__ = __webpack_require__(210);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28_rxjs_add_operator_do___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_28_rxjs_add_operator_do__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29_rxjs_add_operator_switchMap__ = __webpack_require__(212);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29_rxjs_add_operator_switchMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_29_rxjs_add_operator_switchMap__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24_angular2_disqus__ = __webpack_require__(123);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24_angular2_disqus___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_24_angular2_disqus__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25_rxjs_add_observable_of__ = __webpack_require__(209);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25_rxjs_add_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_25_rxjs_add_observable_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26_rxjs_add_observable_throw__ = __webpack_require__(210);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26_rxjs_add_observable_throw___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_26_rxjs_add_observable_throw__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27_rxjs_add_operator_map__ = __webpack_require__(213);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_27_rxjs_add_operator_map__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28_rxjs_add_operator_catch__ = __webpack_require__(211);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_28_rxjs_add_operator_catch__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29_rxjs_add_operator_do__ = __webpack_require__(212);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29_rxjs_add_operator_do___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_29_rxjs_add_operator_do__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30_rxjs_add_operator_switchMap__ = __webpack_require__(214);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30_rxjs_add_operator_switchMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_30_rxjs_add_operator_switchMap__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -150,6 +152,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -189,7 +192,7 @@ var AppModule = (function () {
     return AppModule;
 }());
 AppModule = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* NgModule */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
         declarations: [
             __WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */], __WEBPACK_IMPORTED_MODULE_16__shared_nav_component__["a" /* NavComponent */], __WEBPACK_IMPORTED_MODULE_16__shared_nav_component__["b" /* NavInvertComponent */], __WEBPACK_IMPORTED_MODULE_7__blog_blog_component__["a" /* BlogComponent */], __WEBPACK_IMPORTED_MODULE_8__about_about_component__["a" /* AboutComponent */], __WEBPACK_IMPORTED_MODULE_9__contact_contact_component__["a" /* ContactComponent */],
             __WEBPACK_IMPORTED_MODULE_17__shared_footer_component__["a" /* FooterComponent */], __WEBPACK_IMPORTED_MODULE_11__shared_intro_header_component__["a" /* IntroHeaderComponent */], __WEBPACK_IMPORTED_MODULE_21__auth_auth_login_component__["a" /* LoginComponent */], __WEBPACK_IMPORTED_MODULE_22__blog_blog_create_component__["a" /* CreatePostComponent */], __WEBPACK_IMPORTED_MODULE_23__blog_blog_post_component__["a" /* BlogPostComponent */],
@@ -199,7 +202,8 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
             __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
             __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* HttpModule */],
-            __WEBPACK_IMPORTED_MODULE_5__app_routing_module__["a" /* AppRoutingModule */]
+            __WEBPACK_IMPORTED_MODULE_5__app_routing_module__["a" /* AppRoutingModule */],
+            __WEBPACK_IMPORTED_MODULE_24_angular2_disqus__["DisqusModule"]
         ],
         providers: [__WEBPACK_IMPORTED_MODULE_10__contact_contact_service__["a" /* ContactService */], __WEBPACK_IMPORTED_MODULE_12__shared_shared_service__["a" /* SharedService */], __WEBPACK_IMPORTED_MODULE_13__shared_logger_service__["a" /* LoggerService */], __WEBPACK_IMPORTED_MODULE_14__shared_uploader_service__["a" /* UploaderService */], __WEBPACK_IMPORTED_MODULE_19__shared_pagination_service__["a" /* PagerService */], __WEBPACK_IMPORTED_MODULE_20__blog_blog_service__["a" /* BlogPostService */],
             __WEBPACK_IMPORTED_MODULE_6__auth_auth_service__["a" /* AuthLoginService */], __WEBPACK_IMPORTED_MODULE_18__angular_common__["a" /* DatePipe */], __WEBPACK_IMPORTED_MODULE_6__auth_auth_service__["b" /* AuthGuard */]
@@ -259,7 +263,7 @@ var AppRoutingModule = (function () {
     return AppRoutingModule;
 }());
 AppRoutingModule = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["b" /* NgModule */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
         imports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* RouterModule */].forRoot(routes)],
         exports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* RouterModule */]]
     })
@@ -347,10 +351,10 @@ var FooterComponent = (function () {
     return FooterComponent;
 }());
 FooterComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'footer-section',
-        template: __webpack_require__(199),
-        styles: [__webpack_require__(181)]
+        template: __webpack_require__(201),
+        styles: [__webpack_require__(183)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__shared_shared_service__["a" /* SharedService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__shared_shared_service__["a" /* SharedService */]) === "function" && _b || Object])
 ], FooterComponent);
@@ -392,22 +396,22 @@ var IntroHeaderComponent = (function () {
     return IntroHeaderComponent;
 }());
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Input */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
     __metadata("design:type", String)
 ], IntroHeaderComponent.prototype, "backgroundImgUrl", void 0);
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Input */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
     __metadata("design:type", String)
 ], IntroHeaderComponent.prototype, "headerMessage", void 0);
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Input */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
     __metadata("design:type", String)
 ], IntroHeaderComponent.prototype, "subheaderMessage", void 0);
 IntroHeaderComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'intro-header',
-        template: __webpack_require__(200),
-        styles: [__webpack_require__(182)]
+        template: __webpack_require__(202),
+        styles: [__webpack_require__(184)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__shared_shared_service__["a" /* SharedService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__shared_shared_service__["a" /* SharedService */]) === "function" && _b || Object])
 ], IntroHeaderComponent);
@@ -483,7 +487,7 @@ var LoggerService = (function () {
     return LoggerService;
 }());
 LoggerService = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]) === "function" && _a || Object])
 ], LoggerService);
 
@@ -530,10 +534,10 @@ var NavComponent = (function () {
     return NavComponent;
 }());
 NavComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'nav-bar',
-        template: __webpack_require__(201),
-        styles: [__webpack_require__(183)]
+        template: __webpack_require__(203),
+        styles: [__webpack_require__(185)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === "function" && _a || Object])
 ], NavComponent);
@@ -557,10 +561,10 @@ var NavInvertComponent = (function () {
     return NavInvertComponent;
 }());
 NavInvertComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'nav-bar-invert',
-        template: __webpack_require__(202),
-        styles: [__webpack_require__(184)]
+        template: __webpack_require__(204),
+        styles: [__webpack_require__(186)]
     }),
     __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === "function" && _b || Object])
 ], NavInvertComponent);
@@ -612,7 +616,7 @@ var GetDatetimePipe = (function () {
     return GetDatetimePipe;
 }());
 GetDatetimePipe = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["S" /* Pipe */])({ name: "getDatetime" })
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"])({ name: "getDatetime" })
 ], GetDatetimePipe);
 
 //# sourceMappingURL=shared.pipes.js.map
@@ -694,7 +698,7 @@ var UploaderService = (function () {
     return UploaderService;
 }());
 UploaderService = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__shared_shared_service__["a" /* SharedService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__shared_shared_service__["a" /* SharedService */]) === "function" && _b || Object])
 ], UploaderService);
 
@@ -715,42 +719,6 @@ var environment = {
 
 /***/ }),
 
-/***/ 177:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(5)();
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ 178:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(5)();
-// imports
-
-
-// module
-exports.push([module.i, "\r\n.floating-label-form-group {\r\n  font-size: 14px;\r\n  position: relative;\r\n  margin-bottom: 0;\r\n  padding-bottom: 0.5em;\r\n  border-bottom: 1px solid #eeeeee;\r\n}\r\n.floating-label-form-group input,\r\n.floating-label-form-group textarea {\r\n  z-index: 1;\r\n  position: relative;\r\n  padding-right: 0;\r\n  padding-left: 0;\r\n  border: none;\r\n  border-radius: 0;\r\n  font-size: 1.5em;\r\n  background: none;\r\n  box-shadow: none !important;\r\n  resize: none;\r\n}\r\n.floating-label-form-group label {\r\n  display: block;\r\n  z-index: 0;\r\n  position: relative;\r\n  top: 2em;\r\n  margin: 0;\r\n  font-size: 0.85em;\r\n  line-height: 1.764705882em;\r\n  vertical-align: middle;\r\n  vertical-align: baseline;\r\n  opacity: 0;\r\n  -webkit-transition: top 0.3s ease,opacity 0.3s ease;\r\n  transition: top 0.3s ease,opacity 0.3s ease;\r\n}\r\n.floating-label-form-group::not(:first-child) {\r\n  padding-left: 14px;\r\n  border-left: 1px solid #eeeeee;\r\n}\r\n.floating-label-form-group-with-value label {\r\n  top: 0;\r\n  opacity: 1;\r\n}\r\n.floating-label-form-group-with-focus label {\r\n  color: #0085A1;\r\n}\r\nform .row:first-child .floating-label-form-group {\r\n  border-top: 1px solid #eeeeee;\r\n}\r\n", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
 /***/ 179:
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -759,7 +727,7 @@ exports = module.exports = __webpack_require__(5)();
 
 
 // module
-exports.push([module.i, "\r\n#text-container {\r\n    margin-top: 70px;\r\n\r\n}\r\n#post-labels {\r\n    margin-right: 5px;\r\n    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\r\n    font-style: normal;\r\n}\r\n.post-meta {\r\n  color: #777777;\r\n  font-size: 18px;\r\n  margin-top: 0;\r\n}\r\n.post-meta > a {\r\n  text-decoration: none;\r\n  color: #333333;\r\n  font-style: italic;\r\n}\r\n.post-meta > a:hover,\r\n.post-meta > a:focus {\r\n  color: #0085A1;\r\n  text-decoration: underline;\r\n}\r\n.label-default {\r\n  background-color: #bdbdbd;\r\n  color: white;\r\n}\r\n#post-body {\r\n  margin: 0;\r\n  font-weight: 300;\r\n  margin-bottom: 10px;\r\n}\r\n@media only screen and (min-width: 768px) {\r\n  .post-title {\r\n    font-size: 36px;\r\n  }\r\n}", ""]);
+exports.push([module.i, "", ""]);
 
 // exports
 
@@ -795,7 +763,7 @@ exports = module.exports = __webpack_require__(5)();
 
 
 // module
-exports.push([module.i, "footer {\r\n  padding: 50px 0 65px;\r\n}\r\nfooter .list-inline {\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\nfooter .copyright {\r\n  font-size: 14px;\r\n  text-align: center;\r\n  margin-bottom: 0;\r\n}\r\n", ""]);
+exports.push([module.i, "\r\n#text-container {\r\n    margin-top: 70px;\r\n\r\n}\r\n#post-labels {\r\n    margin-right: 5px;\r\n    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\r\n    font-style: normal;\r\n}\r\n.post-meta {\r\n  color: #777777;\r\n  font-size: 18px;\r\n  margin-top: 0;\r\n}\r\n.post-meta > a {\r\n  text-decoration: none;\r\n  color: #333333;\r\n  font-style: italic;\r\n}\r\n.post-meta > a:hover,\r\n.post-meta > a:focus {\r\n  color: #0085A1;\r\n  text-decoration: underline;\r\n}\r\n.label-default {\r\n  background-color: #bdbdbd;\r\n  color: white;\r\n}\r\n#post-body {\r\n  margin: 0;\r\n  font-weight: 300;\r\n  margin-bottom: 10px;\r\n}\r\n@media only screen and (min-width: 768px) {\r\n  .post-title {\r\n    font-size: 36px;\r\n  }\r\n}\r\n#disqus-row {\r\n  margin-top: 100px;\r\n}", ""]);
 
 // exports
 
@@ -813,7 +781,7 @@ exports = module.exports = __webpack_require__(5)();
 
 
 // module
-exports.push([module.i, ".intro-header {\r\n  background-color: #777777;\r\n  background: no-repeat center center;\r\n  background-attachment: scroll;\r\n  background-size: cover;\r\n  -o-background-size: cover;\r\n  margin-bottom: 50px;\r\n}\r\n.intro-header .site-heading,\r\n.intro-header .post-heading,\r\n.intro-header .page-heading {\r\n  padding: 100px 0 50px;\r\n  color: white;\r\n}\r\n@media only screen and (min-width: 768px) {\r\n  .intro-header .site-heading,\r\n  .intro-header .post-heading,\r\n  .intro-header .page-heading {\r\n    padding: 150px 0;\r\n  }\r\n}\r\n.intro-header .site-heading,\r\n.intro-header .page-heading {\r\n  text-align: center;\r\n}\r\n.intro-header .site-heading h1,\r\n.intro-header .page-heading h1 {\r\n  margin-top: 0;\r\n  font-size: 50px;\r\n}\r\n.intro-header .site-heading .subheading,\r\n.intro-header .page-heading .subheading {\r\n  font-size: 24px;\r\n  line-height: 1.1;\r\n  display: block;\r\n  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\r\n  font-weight: 300;\r\n  margin: 10px 0 0;\r\n}\r\n@media only screen and (min-width: 768px) {\r\n  .intro-header .site-heading h1,\r\n  .intro-header .page-heading h1 {\r\n    font-size: 80px;\r\n  }\r\n}\r\n.intro-header .post-heading h1 {\r\n  font-size: 35px;\r\n}\r\n.intro-header .post-heading .subheading,\r\n.intro-header .post-heading .meta {\r\n  line-height: 1.1;\r\n  display: block;\r\n}\r\n.intro-header .post-heading .subheading {\r\n  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\r\n  font-size: 24px;\r\n  margin: 10px 0 30px;\r\n  font-weight: 600;\r\n}\r\n.intro-header .post-heading .meta {\r\n  font-family: 'Lora', 'Times New Roman', serif;\r\n  font-style: italic;\r\n  font-weight: 300;\r\n  font-size: 20px;\r\n}\r\n.intro-header .post-heading .meta a {\r\n  color: white;\r\n}\r\n@media only screen and (min-width: 768px) {\r\n  .intro-header .post-heading h1 {\r\n    font-size: 55px;\r\n  }\r\n  .intro-header .post-heading .subheading {\r\n    font-size: 30px;\r\n  }\r\n}", ""]);
+exports.push([module.i, "\r\n.floating-label-form-group {\r\n  font-size: 14px;\r\n  position: relative;\r\n  margin-bottom: 0;\r\n  padding-bottom: 0.5em;\r\n  border-bottom: 1px solid #eeeeee;\r\n}\r\n.floating-label-form-group input,\r\n.floating-label-form-group textarea {\r\n  z-index: 1;\r\n  position: relative;\r\n  padding-right: 0;\r\n  padding-left: 0;\r\n  border: none;\r\n  border-radius: 0;\r\n  font-size: 1.5em;\r\n  background: none;\r\n  box-shadow: none !important;\r\n  resize: none;\r\n}\r\n.floating-label-form-group label {\r\n  display: block;\r\n  z-index: 0;\r\n  position: relative;\r\n  top: 2em;\r\n  margin: 0;\r\n  font-size: 0.85em;\r\n  line-height: 1.764705882em;\r\n  vertical-align: middle;\r\n  vertical-align: baseline;\r\n  opacity: 0;\r\n  -webkit-transition: top 0.3s ease,opacity 0.3s ease;\r\n  transition: top 0.3s ease,opacity 0.3s ease;\r\n}\r\n.floating-label-form-group::not(:first-child) {\r\n  padding-left: 14px;\r\n  border-left: 1px solid #eeeeee;\r\n}\r\n.floating-label-form-group-with-value label {\r\n  top: 0;\r\n  opacity: 1;\r\n}\r\n.floating-label-form-group-with-focus label {\r\n  color: #0085A1;\r\n}\r\nform .row:first-child .floating-label-form-group {\r\n  border-top: 1px solid #eeeeee;\r\n}\r\n", ""]);
 
 // exports
 
@@ -831,7 +799,7 @@ exports = module.exports = __webpack_require__(5)();
 
 
 // module
-exports.push([module.i, ".navbar-custom {\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  z-index: 3;\r\n  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\r\n}\r\n.navbar-custom .navbar-brand {\r\n  font-weight: 800;\r\n}\r\n.navbar-custom .navbar-header .navbar-toggle {\r\n  color: #777777;\r\n  font-weight: 800;\r\n  text-transform: uppercase;\r\n  font-size: 12px;\r\n}\r\n.navbar-custom .nav li a {\r\n  text-transform: uppercase;\r\n  font-size: 12px;\r\n  font-weight: 800;\r\n  letter-spacing: 1px;\r\n}\r\n@media only screen and (min-width: 768px) {\r\n  .navbar-custom {\r\n    background: transparent;\r\n    border-bottom: 1px solid transparent;\r\n  }\r\n  .navbar-custom .navbar-brand {\r\n    color: white;\r\n    padding: 20px;\r\n  }\r\n  .navbar-custom .navbar-brand:hover,\r\n  .navbar-custom .navbar-brand:focus {\r\n    color: rgba(255, 255, 255, 0.8);\r\n  }\r\n  .navbar-custom .nav li a {\r\n    color: white;\r\n    padding: 20px;\r\n  }\r\n  .navbar-custom .nav li a:hover,\r\n  .navbar-custom .nav li a:focus {\r\n    color: rgba(255, 255, 255, 0.8);\r\n  }\r\n  .navbar-custom .nav li ul.dropdown-menu a {\r\n    color: #333333;\r\n  }\r\n  .navbar-custom .nav li ul.dropdown-menu a:hover,\r\n  .navbar-custom .nav li ul.dropdown-menu a:focus {\r\n    color: #0085A1;\r\n  }\r\n}\r\n@media only screen and (min-width: 1170px) {\r\n  .navbar-custom {\r\n    -webkit-transition: background-color 0.3s;\r\n    transition: background-color 0.3s;\r\n    /* Force Hardware Acceleration in WebKit */\r\n    -webkit-transform: translate3d(0, 0, 0);\r\n    transform: translate3d(0, 0, 0);\r\n    -webkit-backface-visibility: hidden;\r\n    backface-visibility: hidden;\r\n  }\r\n  .navbar-custom.is-fixed {\r\n    /* when the user scrolls down, we hide the header right above the viewport */\r\n    position: fixed;\r\n    top: -61px;\r\n    background-color: rgba(255, 255, 255, 0.9);\r\n    border-bottom: 1px solid #f2f2f2;\r\n    -webkit-transition: -webkit-transform 0.3s;\r\n    transition: -webkit-transform 0.3s;\r\n    transition: transform 0.3s;\r\n    transition: transform 0.3s, -webkit-transform 0.3s;\r\n  }\r\n  .navbar-custom.is-fixed .navbar-brand {\r\n    color: #333333;\r\n  }\r\n  .navbar-custom.is-fixed .navbar-brand:hover,\r\n  .navbar-custom.is-fixed .navbar-brand:focus {\r\n    color: #0085A1;\r\n  }\r\n  .navbar-custom.is-fixed .nav li a {\r\n    color: #333333;\r\n  }\r\n  .navbar-custom.is-fixed .nav li a:hover,\r\n  .navbar-custom.is-fixed .nav li a:focus {\r\n    color: #0085A1;\r\n  }\r\n  .navbar-custom.is-visible {\r\n    /* if the user changes the scrolling direction, we show the header */\r\n    -webkit-transform: translate3d(0, 100%, 0);\r\n    transform: translate3d(0, 100%, 0);\r\n  }\r\n}\r\n#logoutLink {\r\n  cursor: pointer;\r\n}", ""]);
+exports.push([module.i, "footer {\r\n  padding: 50px 0 65px;\r\n}\r\nfooter .list-inline {\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\nfooter .copyright {\r\n  font-size: 14px;\r\n  text-align: center;\r\n  margin-bottom: 0;\r\n}\r\n", ""]);
 
 // exports
 
@@ -849,6 +817,42 @@ exports = module.exports = __webpack_require__(5)();
 
 
 // module
+exports.push([module.i, ".intro-header {\r\n  background-color: #777777;\r\n  background: no-repeat center center;\r\n  background-attachment: scroll;\r\n  background-size: cover;\r\n  -o-background-size: cover;\r\n  margin-bottom: 50px;\r\n}\r\n.intro-header .site-heading,\r\n.intro-header .post-heading,\r\n.intro-header .page-heading {\r\n  padding: 100px 0 50px;\r\n  color: white;\r\n}\r\n@media only screen and (min-width: 768px) {\r\n  .intro-header .site-heading,\r\n  .intro-header .post-heading,\r\n  .intro-header .page-heading {\r\n    padding: 150px 0;\r\n  }\r\n}\r\n.intro-header .site-heading,\r\n.intro-header .page-heading {\r\n  text-align: center;\r\n}\r\n.intro-header .site-heading h1,\r\n.intro-header .page-heading h1 {\r\n  margin-top: 0;\r\n  font-size: 50px;\r\n}\r\n.intro-header .site-heading .subheading,\r\n.intro-header .page-heading .subheading {\r\n  font-size: 24px;\r\n  line-height: 1.1;\r\n  display: block;\r\n  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\r\n  font-weight: 300;\r\n  margin: 10px 0 0;\r\n}\r\n@media only screen and (min-width: 768px) {\r\n  .intro-header .site-heading h1,\r\n  .intro-header .page-heading h1 {\r\n    font-size: 80px;\r\n  }\r\n}\r\n.intro-header .post-heading h1 {\r\n  font-size: 35px;\r\n}\r\n.intro-header .post-heading .subheading,\r\n.intro-header .post-heading .meta {\r\n  line-height: 1.1;\r\n  display: block;\r\n}\r\n.intro-header .post-heading .subheading {\r\n  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\r\n  font-size: 24px;\r\n  margin: 10px 0 30px;\r\n  font-weight: 600;\r\n}\r\n.intro-header .post-heading .meta {\r\n  font-family: 'Lora', 'Times New Roman', serif;\r\n  font-style: italic;\r\n  font-weight: 300;\r\n  font-size: 20px;\r\n}\r\n.intro-header .post-heading .meta a {\r\n  color: white;\r\n}\r\n@media only screen and (min-width: 768px) {\r\n  .intro-header .post-heading h1 {\r\n    font-size: 55px;\r\n  }\r\n  .intro-header .post-heading .subheading {\r\n    font-size: 30px;\r\n  }\r\n}", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 185:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(5)();
+// imports
+
+
+// module
+exports.push([module.i, ".navbar-custom {\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  z-index: 3;\r\n  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\r\n}\r\n.navbar-custom .navbar-brand {\r\n  font-weight: 800;\r\n}\r\n.navbar-custom .navbar-header .navbar-toggle {\r\n  color: #777777;\r\n  font-weight: 800;\r\n  text-transform: uppercase;\r\n  font-size: 12px;\r\n}\r\n.navbar-custom .nav li a {\r\n  text-transform: uppercase;\r\n  font-size: 12px;\r\n  font-weight: 800;\r\n  letter-spacing: 1px;\r\n}\r\n@media only screen and (min-width: 768px) {\r\n  .navbar-custom {\r\n    background: transparent;\r\n    border-bottom: 1px solid transparent;\r\n  }\r\n  .navbar-custom .navbar-brand {\r\n    color: white;\r\n    padding: 20px;\r\n  }\r\n  .navbar-custom .navbar-brand:hover,\r\n  .navbar-custom .navbar-brand:focus {\r\n    color: rgba(255, 255, 255, 0.8);\r\n  }\r\n  .navbar-custom .nav li a {\r\n    color: white;\r\n    padding: 20px;\r\n  }\r\n  .navbar-custom .nav li a:hover,\r\n  .navbar-custom .nav li a:focus {\r\n    color: rgba(255, 255, 255, 0.8);\r\n  }\r\n  .navbar-custom .nav li ul.dropdown-menu a {\r\n    color: #333333;\r\n  }\r\n  .navbar-custom .nav li ul.dropdown-menu a:hover,\r\n  .navbar-custom .nav li ul.dropdown-menu a:focus {\r\n    color: #0085A1;\r\n  }\r\n}\r\n@media only screen and (min-width: 1170px) {\r\n  .navbar-custom {\r\n    -webkit-transition: background-color 0.3s;\r\n    transition: background-color 0.3s;\r\n    /* Force Hardware Acceleration in WebKit */\r\n    -webkit-transform: translate3d(0, 0, 0);\r\n    transform: translate3d(0, 0, 0);\r\n    -webkit-backface-visibility: hidden;\r\n    backface-visibility: hidden;\r\n  }\r\n  .navbar-custom.is-fixed {\r\n    /* when the user scrolls down, we hide the header right above the viewport */\r\n    position: fixed;\r\n    top: -61px;\r\n    background-color: rgba(255, 255, 255, 0.9);\r\n    border-bottom: 1px solid #f2f2f2;\r\n    -webkit-transition: -webkit-transform 0.3s;\r\n    transition: -webkit-transform 0.3s;\r\n    transition: transform 0.3s;\r\n    transition: transform 0.3s, -webkit-transform 0.3s;\r\n  }\r\n  .navbar-custom.is-fixed .navbar-brand {\r\n    color: #333333;\r\n  }\r\n  .navbar-custom.is-fixed .navbar-brand:hover,\r\n  .navbar-custom.is-fixed .navbar-brand:focus {\r\n    color: #0085A1;\r\n  }\r\n  .navbar-custom.is-fixed .nav li a {\r\n    color: #333333;\r\n  }\r\n  .navbar-custom.is-fixed .nav li a:hover,\r\n  .navbar-custom.is-fixed .nav li a:focus {\r\n    color: #0085A1;\r\n  }\r\n  .navbar-custom.is-visible {\r\n    /* if the user changes the scrolling direction, we show the header */\r\n    -webkit-transform: translate3d(0, 100%, 0);\r\n    transform: translate3d(0, 100%, 0);\r\n  }\r\n}\r\n#logoutLink {\r\n  cursor: pointer;\r\n}", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 186:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(5)();
+// imports
+
+
+// module
 exports.push([module.i, ".navbar-custom {\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  z-index: 3;\r\n  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\r\n}\r\n.navbar-custom .navbar-brand {\r\n  font-weight: 800;\r\n}\r\n.navbar-custom .navbar-header .navbar-toggle {\r\n  color: #777777;\r\n  font-weight: 800;\r\n  text-transform: uppercase;\r\n  font-size: 12px;\r\n}\r\n.navbar-custom .nav li a {\r\n  text-transform: uppercase;\r\n  font-size: 12px;\r\n  font-weight: 800;\r\n  letter-spacing: 1px;\r\n}\r\n@media only screen and (min-width: 768px) {\r\n  .navbar-custom {\r\n    background: white;\r\n    border-bottom: 1px solid transparent;\r\n  }\r\n  .navbar-custom .navbar-brand {\r\n    color: #777;\r\n    padding: 20px;\r\n  }\r\n  .navbar-custom .navbar-brand:hover,\r\n  .navbar-custom .navbar-brand:focus {\r\n    color: rgba(255, 255, 255, 0.8);\r\n  }\r\n  .navbar-custom .nav li a {\r\n    color: #777;\r\n    padding: 20px;\r\n  }\r\n  .navbar-custom .nav li a:hover,\r\n  .navbar-custom .nav li a:focus {\r\n    color: #333333;\r\n  }\r\n  .navbar-custom .nav li ul.dropdown-menu a {\r\n    color: #333333;\r\n  }\r\n  .navbar-custom .nav li ul.dropdown-menu a:hover,\r\n  .navbar-custom .nav li ul.dropdown-menu a:focus {\r\n    color: #0085A1;\r\n  }\r\n}\r\n@media only screen and (min-width: 1170px) {\r\n  .navbar-custom {\r\n    -webkit-transition: background-color 0.3s;\r\n    transition: background-color 0.3s;\r\n    /* Force Hardware Acceleration in WebKit */\r\n    -webkit-transform: translate3d(0, 0, 0);\r\n    transform: translate3d(0, 0, 0);\r\n    -webkit-backface-visibility: hidden;\r\n    backface-visibility: hidden;\r\n  }\r\n  .navbar-custom.is-fixed {\r\n    /* when the user scrolls down, we hide the header right above the viewport */\r\n    position: fixed;\r\n    top: -61px;\r\n    background-color: rgba(255, 255, 255, 0.9);\r\n    border-bottom: 1px solid #f2f2f2;\r\n    -webkit-transition: -webkit-transform 0.3s;\r\n    transition: -webkit-transform 0.3s;\r\n    transition: transform 0.3s;\r\n    transition: transform 0.3s, -webkit-transform 0.3s;\r\n  }\r\n  .navbar-custom.is-fixed .navbar-brand {\r\n    color: #333333;\r\n  }\r\n  .navbar-custom.is-fixed .navbar-brand:hover,\r\n  .navbar-custom.is-fixed .navbar-brand:focus {\r\n    color: #0085A1;\r\n  }\r\n  .navbar-custom.is-fixed .nav li a {\r\n    color: #333333;\r\n  }\r\n  .navbar-custom.is-fixed .nav li a:hover,\r\n  .navbar-custom.is-fixed .nav li a:focus {\r\n    color: #0085A1;\r\n  }\r\n  .navbar-custom.is-visible {\r\n    /* if the user changes the scrolling direction, we show the header */\r\n    -webkit-transform: translate3d(0, 100%, 0);\r\n    transform: translate3d(0, 100%, 0);\r\n  }\r\n}\r\n#logoutLink {\r\n  cursor: pointer;\r\n}", ""]);
 
 // exports
@@ -859,84 +863,84 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 192:
+/***/ 194:
 /***/ (function(module, exports) {
 
 module.exports = "<nav-bar></nav-bar>\r\n\r\n<intro-header [backgroundImgUrl]=\"backgroundImgUrl\" [headerMessage]=\"headerMessage\" [subheaderMessage]=\"subheaderMessage\"></intro-header>\r\n\r\n<!-- Main Content -->\r\n<div class=\"container\">\r\n    <div class=\"row\">\r\n        <div class=\"col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1\">\r\n            <p>Data Engineer by day, Batman, I mean workout enthuiast by night.</p>\r\n            <p>\r\n               In a world where facts no longer seem to matter as much, I strive to reveal the importance and share \r\n               it through data. We have so much data at our disposal, so somebody has to do it. \r\n            </p>\r\n            <p>Two wheels are my favorite past time. From bicycles to motorcycles, I love it all. Nothing like riding \r\n                through the city with the on a Spring\r\n            </p>\r\n            <p> NYC living</p>\r\n            <p> Go Bearcats. Baruch College Alum</p>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<footer-section></footer-section>"
 
 /***/ }),
 
-/***/ 193:
+/***/ 195:
 /***/ (function(module, exports) {
 
 module.exports = "<router-outlet></router-outlet>"
 
 /***/ }),
 
-/***/ 194:
+/***/ 196:
 /***/ (function(module, exports) {
 
 module.exports = "<nav-bar></nav-bar>\r\n\r\n<intro-header [backgroundImgUrl]=\"backgroundImgUrl\" [headerMessage]=\"headerMessage\" [subheaderMessage]=\"subheaderMessage\">\r\n</intro-header>\r\n\r\n<div class=\"container\">\r\n  <div class=\"row\">\r\n    <div class=\"col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1\">\r\n      <h1 align=\"center\">GRRRRR!!!</h1>\r\n      <p *ngIf=\"errorMessage\" class=\"alert alert-danger\"> {{ errorMessage }} </p>\r\n      <form (ngSubmit)=\"onSubmit()\" #userSignUpForm=\"ngForm\" novalidate> \r\n\r\n        <div class=\"row control-group\">\r\n            <div class=\"form-group col-xs-12 floating-label-form-group controls\">\r\n                <label>Username</label>\r\n          <input class=\"form-control\" id=\"email\" placeholder=\"Email or Username\" \r\n                  required oninvalid=\"setCustomValidity('testing')\" name=\"email\" [(ngModel)]=\"user.Email\" \r\n                  #email=\"ngModel\" pattern=\"[^%#!$&*()+/|`~=?'\\<>, ]{1,50}\" >\r\n            </div>\r\n            <div [hidden]=\"email.valid || email.pristine\" class=\"alert alert-danger\">\r\n                    Valid email/username required\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"row control-group\">\r\n            <div class=\"form-group col-xs-12 floating-label-form-group controls\">\r\n                <label>Password</label>\r\n          <input type=\"password\" class=\"form-control\" id=\"password\" placeholder=\"Password\" required \r\n                  name=\"password\" [(ngModel)]=\"user.Password\" #password=\"ngModel\"  minlength=\"1\" maxlength=\"50\">\r\n            </div>\r\n            <div [hidden]=\"password.valid || password.pristine\" class=\"alert alert-danger\">\r\n                    Password required\r\n            </div>\r\n        </div>\r\n        <br>\r\n        <div class=\"row\">\r\n          <div class=\"form-group col-xs-12\">\r\n            <button type=\"submit\" class=\"btn btn-default\" [disabled]=\"!userSignUpForm.form.valid\">Login</button>\r\n          </div>\r\n        </div>\r\n      </form>\r\n  </div>\r\n  </div>\r\n</div>\r\n\r\n<footer-section></footer-section>"
 
 /***/ }),
 
-/***/ 195:
+/***/ 197:
 /***/ (function(module, exports) {
 
 module.exports = "\r\n<nav-bar></nav-bar>\r\n\r\n<intro-header [backgroundImgUrl]=\"backgroundImgUrl\" [headerMessage]=\"headerMessage\" [subheaderMessage]=\"subheaderMessage\"></intro-header>\r\n\r\n<!-- Main Content -->\r\n<div class=\"container\">\r\n    <div class=\"row\">\r\n        <div class=\"col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1\">\r\n             <p *ngIf=\"errorMessage\" class=\"alert alert-danger\"> \r\n                {{ errorMessage }} <i class=\"fa fa-frown-o\" aria-hidden=\"true\"></i>\r\n            </p>\r\n            <div *ngFor=\"let post of pagedPosts\">\r\n                <div class=\"post-preview\">\r\n                    <a [routerLink]=\"['/post', post._id.$oid]\">\r\n                        <h2 class=\"post-title\">\r\n                            {{ post.Title }}\r\n                        </h2>\r\n                        <h3 class=\"post-subtitle\">\r\n                            <div [innerHTML]=\"getSubString(post.Body)\"></div>\r\n                        </h3>\r\n                    </a>\r\n                    <p class=\"post-meta\">Posted by <a href=\"{{ twitter }}\">{{ post.Author.FirstName }}</a> on {{ post.CreatedOn | getDatetime | date:'yMMMMd' }}\r\n                        <br/>   <span class=\"label label-default\" id=\"post-labels\" *ngFor=\"let tag of post.Tags\">{{ tag }}</span>\r\n                    </p>\r\n                </div>\r\n                <hr>\r\n            </div>\r\n            <!-- Pager -->\r\n            <ul class=\"pager\">\r\n                <li class=\"previous clickable\" [ngClass]=\"{disabled:pager.currentPage === 1}\">\r\n                    <!--<li class=\"previous clickable\" *ngIf=\"pager.currentPage != 1\">-->\r\n                    <a (click)=\"setPage(pager.currentPage - 1)\" class=\"col-xs-12 col-sm-4 col-md-4 col-lg-4\">&larr; Newer Posts</a>\r\n                </li>\r\n                <li id=\"pageNumbers\"><a>{{ pager.currentPage }} of {{ pager.totalPages }}</a></li>\r\n                <li class=\"next clickable\" [ngClass]=\"{disabled:pager.currentPage === pager.totalPages}\">\r\n                    <a (click)=\"setPage(pager.currentPage + 1)\" class=\"col-xs-12 col-sm-4 col-md-4 col-lg-4\">Older Posts &rarr;</a>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<footer-section></footer-section>\r\n\r\n\r\n"
 
 /***/ }),
 
-/***/ 196:
+/***/ 198:
 /***/ (function(module, exports) {
 
 module.exports = "<nav-bar></nav-bar>\r\n\r\n<intro-header [backgroundImgUrl]=\"backgroundImgUrl\" [headerMessage]=\"headerMessage\" [subheaderMessage]=\"subheaderMessage\">\r\n</intro-header>\r\n\r\n<div class=\"container\">\r\n  <div class=\"row\">\r\n    <div class=\"col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1\">\r\n      <p *ngIf=\"errorMessage\" class=\"alert alert-danger\"> {{ errorMessage }} </p>\r\n      <form (ngSubmit)=\"onSubmit()\" #newPostForm=\"ngForm\" novalidate> \r\n\r\n        <div class=\"row control-group\">\r\n            <div class=\"form-group col-xs-12 floating-label-form-group controls\">\r\n                <label>Title</label>\r\n          <input class=\"form-control\" id=\"title\" placeholder=\"Title\" \r\n                  required name=\"title\" [(ngModel)]=\"newPost.Title\" \r\n                  #title=\"ngModel\" maxlength=\"100\" >\r\n            </div>\r\n            <div [hidden]=\"title.valid || title.pristine\" class=\"alert alert-danger\">\r\n                    Title required\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"row control-group\">\r\n            <div class=\"form-group col-xs-12 floating-label-form-group controls\">\r\n                <label>Tags</label>\r\n          <input class=\"form-control\" id=\"tags\" placeholder=\"Tags\" name=\"tags\" [(ngModel)]=\"newPost.Tags\" \r\n                  #tags=\"ngModel\" pattern=\"[^%#!$&*()+/|`~=?'\\<>]{1,50}\" >\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"row control-group\">\r\n            <div class=\"form-group col-xs-12 floating-label-form-group controls\">\r\n                <label>Body</label>\r\n          <textarea style=\"height: 500px;\" [(ngModel)]=\"newPost.Body\" rows=\"5\" class=\"form-control\" placeholder=\"Body\" \r\n                        id=\"body\" #body=\"ngModel\" required name=\"body\" maxlength=\"2000\"></textarea>\r\n                        <p class=\"help-block text-danger\"></p>\r\n            </div>\r\n            <div [hidden]=\"body.valid || body.pristine\" class=\"alert alert-danger\">\r\n                    Body required\r\n            </div>\r\n        </div>\r\n        <br>\r\n        <div class=\"row\">\r\n          <div class=\"form-group col-xs-12\">\r\n            <button type=\"submit\" class=\"btn btn-default\" [disabled]=\"!newPostForm.form.valid\">Publish</button>\r\n          </div>\r\n        </div>\r\n      </form>\r\n  </div>\r\n  </div>\r\n</div>\r\n\r\n<footer-section></footer-section>"
 
 /***/ }),
 
-/***/ 197:
-/***/ (function(module, exports) {
-
-module.exports = "<nav-bar-invert></nav-bar-invert>\r\n\r\n<div class=\"container\" id=\"text-container\">\r\n    <div class=\"row\">\r\n        <div *ngFor=\"let post of onePost\" class=\"col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1\">\r\n             <p *ngIf=\"errorMessage\" class=\"alert alert-danger\"> \r\n                {{ errorMessage }} <i class=\"fa fa-frown-o\" aria-hidden=\"true\"></i>\r\n            </p>\r\n            <h2 class=\"post-title\"> {{ post.Title }} </h2>\r\n            <p class=\"post-meta\">Posted by <a href=\"{{ twitter }}\">{{ post.Author.FirstName }}</a> | {{ post.CreatedOn | getDatetime | date:'yMMMMd' }}\r\n                <br/> \r\n                \r\n                <span class=\"label label-default\" id=\"post-labels\" *ngFor=\"let tag of post.Tags\">{{ tag }}</span>\r\n               \r\n            </p>\r\n            <div [innerHTML]=\"post.Body\"></div>\r\n            \r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n\r\n<footer-section></footer-section>"
-
-/***/ }),
-
-/***/ 198:
-/***/ (function(module, exports) {
-
-module.exports = "<nav-bar></nav-bar>\r\n\r\n<intro-header [backgroundImgUrl]=\"backgroundImgUrl\" [headerMessage]=\"headerMessage\" [subheaderMessage]=\"subheaderMessage\"></intro-header>\r\n\r\n<!-- Main Content -->\r\n<div class=\"container\">\r\n    <div class=\"row\">\r\n        <div class=\"col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1\">\r\n            <p>Want to get in touch with me? Fill out the form below to send me a message and I will try to get back to you within 24 hours!</p>\r\n            <p *ngIf=\"errorMessage\" class=\"alert alert-danger\"> \r\n                {{ errorMessage }} <i class=\"fa fa-frown-o\" aria-hidden=\"true\"></i>\r\n            </p>\r\n            <p *ngIf=\"successMessage\" class=\"alert alert-success\"> \r\n                {{ successMessage }} <i class=\"fa fa-smile-o\" aria-hidden=\"true\"></i> \r\n            </p>\r\n            <form name=\"sentMessage\" id=\"contactForm\" (ngSubmit)=\"onSubmit()\" #messageForm=\"ngForm\" novalidate>\r\n                <div class=\"row control-group\">\r\n                    <div class=\"form-group col-xs-12 floating-label-form-group controls\">\r\n                        <label>Name</label>\r\n                        <input [(ngModel)]=\"contactMsg.Name\" type=\"text\" class=\"form-control\" placeholder=\"Name\" id=\"name\" \r\n                        #name=\"ngModel\" required name=\"name\" pattern=\"[^%#!$&*()+/|`~=?@<>]{1,50}\">\r\n                        <p class=\"help-block text-danger\"></p>\r\n                    </div>\r\n                    <div [hidden]=\"name.valid || name.pristine\" class=\"alert alert-danger\">\r\n                            Valid name is required\r\n                    </div>\r\n                </div>\r\n                <div class=\"row control-group\">\r\n                    <div class=\"form-group col-xs-12 floating-label-form-group controls\">\r\n                        <label>Email Address</label>\r\n                        <input [(ngModel)]=\"contactMsg.Email\" type=\"email\" class=\"form-control\" placeholder=\"Email Address\" \r\n                        id=\"email\" #email=\"ngModel\" required name=\"email\" pattern=\"[^%#!$&*()+/|`~=?'\\<> ]{1,50}\" \r\n                        >\r\n                        <p class=\"help-block text-danger\"></p>\r\n                    </div>\r\n                    <div [hidden]=\"email.valid || email.pristine\" class=\"alert alert-danger\">\r\n                            Valid email is required\r\n                    </div>\r\n                </div>\r\n                <div class=\"row control-group\">\r\n                    <div class=\"form-group col-xs-12 floating-label-form-group controls\">\r\n                        <label>Phone Number</label>\r\n                        <input [(ngModel)]=\"contactMsg.Phone\" type=\"tel\" class=\"form-control\" placeholder=\"Phone Number\" \r\n                        id=\"phone\" #phone=\"ngModel\" name=\"phone\"\r\n                        pattern=\"[^A-Za-z]{1,15}\">\r\n                        <p class=\"help-block text-danger\"></p>\r\n                    </div>\r\n                    <div [hidden]=\"phone.valid || phone.pristine\" class=\"alert alert-danger\">\r\n                            Please enter valid phone number\r\n                    </div>\r\n                </div>\r\n                <div class=\"row control-group\">\r\n                    <div class=\"form-group col-xs-12 floating-label-form-group controls\">\r\n                        <label>Message</label>\r\n                        <textarea [(ngModel)]=\"contactMsg.Message\" rows=\"5\" class=\"form-control\" placeholder=\"Message\" \r\n                        id=\"message\" #message=\"ngModel\" required name=\"message\" maxlength=\"1000\"></textarea>\r\n                        <p class=\"help-block text-danger\"></p>\r\n                    </div>\r\n                    <div [hidden]=\"message.valid || message.pristine\" class=\"alert alert-danger\">\r\n                            A Message is required (Limit: 300 characters)\r\n                    </div>\r\n                </div>\r\n                <br>\r\n                <div id=\"success\"></div>\r\n                <div class=\"row\">\r\n                    <div class=\"form-group col-xs-12\">\r\n                        <button [disabled]=\"!messageForm.form.valid\" type=\"submit\" class=\"btn btn-default\">Send</button>\r\n                    </div>\r\n                </div>\r\n            </form>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<footer-section></footer-section>\r\n"
-
-/***/ }),
-
 /***/ 199:
 /***/ (function(module, exports) {
 
-module.exports = "<hr>\r\n\r\n<footer>\r\n    <div class=\"container\">\r\n        <div class=\"row\">\r\n            <div class=\"col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1\">\r\n                <ul class=\"list-inline text-center\">\r\n                    <li>\r\n                        <a href=\"{{ twitter }}\">\r\n                            <span class=\"fa-stack fa-lg\">\r\n                                <i class=\"fa fa-circle fa-stack-2x\"></i>\r\n                                <i class=\"fa fa-twitter fa-stack-1x fa-inverse\"></i>\r\n                            </span>\r\n                        </a>\r\n                    </li>\r\n                    <li>\r\n                        <a href=\"{{ linkedin }}\">\r\n                            <span class=\"fa-stack fa-lg\">\r\n                                <i class=\"fa fa-circle fa-stack-2x\"></i>\r\n                                <i class=\"fa fa-linkedin fa-stack-1x fa-inverse\"></i>\r\n                            </span>\r\n                        </a>\r\n                    </li>\r\n                    <li>\r\n                        <a href=\"{{ github }}\">\r\n                            <span class=\"fa-stack fa-lg\">\r\n                                <i class=\"fa fa-circle fa-stack-2x\"></i>\r\n                                <i class=\"fa fa-github fa-stack-1x fa-inverse\"></i>\r\n                            </span>\r\n                        </a>\r\n                    </li>\r\n                </ul>\r\n                <p class=\"copyright text-muted\">Copyright &copy; Anthony Blogs 2017</p>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</footer>\r\n\r\n"
+module.exports = "<nav-bar-invert></nav-bar-invert>\r\n\r\n<div class=\"container\" id=\"text-container\">\r\n    <div class=\"row\">\r\n        <div *ngFor=\"let post of onePost\" class=\"col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1\">\r\n             <p *ngIf=\"errorMessage\" class=\"alert alert-danger\"> \r\n                {{ errorMessage }} <i class=\"fa fa-frown-o\" aria-hidden=\"true\"></i>\r\n            </p>\r\n            <h2 class=\"post-title\"> {{ post.Title }} </h2>\r\n            <p class=\"post-meta\">Posted by <a href=\"{{ twitter }}\">{{ post.Author.FirstName }}</a> | {{ post.CreatedOn | getDatetime | date:'yMMMMd' }}\r\n                <br/> \r\n                \r\n                <span class=\"label label-default\" id=\"post-labels\" *ngFor=\"let tag of post.Tags\">{{ tag }}</span>\r\n               \r\n            </p>\r\n            <div [innerHTML]=\"post.Body\"></div>\r\n        </div>\r\n    </div>\r\n    <div class=\"row\" id=\"disqus-row\">\r\n        <div class=\"col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1\" >\r\n            <disqus-thread [page-identifier]=\"pageIdentifier\" [page-url]=\"pageUrl\"></disqus-thread>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<footer-section></footer-section>\r\n\r\n"
 
 /***/ }),
 
 /***/ 200:
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<!--<header class=\"intro-header\" style=\"background-image: url(app/assets/images/boxes-mail.jpg)\">-->\r\n<header class=\"intro-header\" [style.background-image]=\"'url(' + backgroundImgUrl + ')'\">\r\n    <div class=\"container\">\r\n        <div class=\"row\">\r\n            <div class=\"col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1\">\r\n                <div class=\"page-heading\">\r\n                    <h1>{{ headerMessage }}</h1>\r\n                    <hr class=\"small\">\r\n                    <span class=\"subheading\">{{ subheaderMessage }}</span>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</header>"
+module.exports = "<nav-bar></nav-bar>\r\n\r\n<intro-header [backgroundImgUrl]=\"backgroundImgUrl\" [headerMessage]=\"headerMessage\" [subheaderMessage]=\"subheaderMessage\"></intro-header>\r\n\r\n<!-- Main Content -->\r\n<div class=\"container\">\r\n    <div class=\"row\">\r\n        <div class=\"col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1\">\r\n            <p>Want to get in touch with me? Fill out the form below to send me a message and I will try to get back to you within 24 hours!</p>\r\n            <p *ngIf=\"errorMessage\" class=\"alert alert-danger\"> \r\n                {{ errorMessage }} <i class=\"fa fa-frown-o\" aria-hidden=\"true\"></i>\r\n            </p>\r\n            <p *ngIf=\"successMessage\" class=\"alert alert-success\"> \r\n                {{ successMessage }} <i class=\"fa fa-smile-o\" aria-hidden=\"true\"></i> \r\n            </p>\r\n            <form name=\"sentMessage\" id=\"contactForm\" (ngSubmit)=\"onSubmit()\" #messageForm=\"ngForm\" novalidate>\r\n                <div class=\"row control-group\">\r\n                    <div class=\"form-group col-xs-12 floating-label-form-group controls\">\r\n                        <label>Name</label>\r\n                        <input [(ngModel)]=\"contactMsg.Name\" type=\"text\" class=\"form-control\" placeholder=\"Name\" id=\"name\" \r\n                        #name=\"ngModel\" required name=\"name\" pattern=\"[^%#!$&*()+/|`~=?@<>]{1,50}\">\r\n                        <p class=\"help-block text-danger\"></p>\r\n                    </div>\r\n                    <div [hidden]=\"name.valid || name.pristine\" class=\"alert alert-danger\">\r\n                            Valid name is required\r\n                    </div>\r\n                </div>\r\n                <div class=\"row control-group\">\r\n                    <div class=\"form-group col-xs-12 floating-label-form-group controls\">\r\n                        <label>Email Address</label>\r\n                        <input [(ngModel)]=\"contactMsg.Email\" type=\"email\" class=\"form-control\" placeholder=\"Email Address\" \r\n                        id=\"email\" #email=\"ngModel\" required name=\"email\" pattern=\"[^%#!$&*()+/|`~=?'\\<> ]{1,50}\" \r\n                        >\r\n                        <p class=\"help-block text-danger\"></p>\r\n                    </div>\r\n                    <div [hidden]=\"email.valid || email.pristine\" class=\"alert alert-danger\">\r\n                            Valid email is required\r\n                    </div>\r\n                </div>\r\n                <div class=\"row control-group\">\r\n                    <div class=\"form-group col-xs-12 floating-label-form-group controls\">\r\n                        <label>Phone Number</label>\r\n                        <input [(ngModel)]=\"contactMsg.Phone\" type=\"tel\" class=\"form-control\" placeholder=\"Phone Number\" \r\n                        id=\"phone\" #phone=\"ngModel\" name=\"phone\"\r\n                        pattern=\"[^A-Za-z]{1,15}\">\r\n                        <p class=\"help-block text-danger\"></p>\r\n                    </div>\r\n                    <div [hidden]=\"phone.valid || phone.pristine\" class=\"alert alert-danger\">\r\n                            Please enter valid phone number\r\n                    </div>\r\n                </div>\r\n                <div class=\"row control-group\">\r\n                    <div class=\"form-group col-xs-12 floating-label-form-group controls\">\r\n                        <label>Message</label>\r\n                        <textarea [(ngModel)]=\"contactMsg.Message\" rows=\"5\" class=\"form-control\" placeholder=\"Message\" \r\n                        id=\"message\" #message=\"ngModel\" required name=\"message\" maxlength=\"1000\"></textarea>\r\n                        <p class=\"help-block text-danger\"></p>\r\n                    </div>\r\n                    <div [hidden]=\"message.valid || message.pristine\" class=\"alert alert-danger\">\r\n                            A Message is required (Limit: 300 characters)\r\n                    </div>\r\n                </div>\r\n                <br>\r\n                <div id=\"success\"></div>\r\n                <div class=\"row\">\r\n                    <div class=\"form-group col-xs-12\">\r\n                        <button [disabled]=\"!messageForm.form.valid\" type=\"submit\" class=\"btn btn-default\">Send</button>\r\n                    </div>\r\n                </div>\r\n            </form>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<footer-section></footer-section>\r\n"
 
 /***/ }),
 
 /***/ 201:
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-default navbar-custom navbar-fixed-top\">\r\n    <div class=\"container-fluid\">\r\n        <!-- Brand and toggle get grouped for better mobile display -->\r\n        <div class=\"navbar-header page-scroll\">\r\n            <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\">\r\n                <span class=\"sr-only\">Toggle navigation</span>\r\n                Menu <i class=\"fa fa-bars\"></i>\r\n            </button>\r\n            <a class=\"navbar-brand\" [routerLink]=\"['/blog']\">\r\n                <img [src]=\"thumbNailImage\" class=\"img-circle img-responsive\" width=\"50\" height=\"50\">\r\n            </a>\r\n            \r\n        </div>\r\n\r\n        <!-- Collect the nav links, forms, and other content for toggling -->\r\n        <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\" style=\"border: none\">\r\n            <ul class=\"nav navbar-nav navbar-right\">    \r\n                <li>\r\n                    <a [routerLink]=\"['/blog']\">Blog</a>\r\n                </li>\r\n                <li>\r\n                    <a [routerLink]=\"['/about']\">About</a>\r\n                </li>\r\n                <li>\r\n                    <a [routerLink]=\"['/contact']\">Contact</a>\r\n                </li>\r\n                <li *ngIf=\"loggedIn\">\r\n                    <a [routerLink]=\"['/create']\">Create</a>\r\n                </li>\r\n                <li *ngIf=\"loggedIn\">\r\n                    <a (click)='logout()' id=\"logoutLink\">Logout</a>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n        <!-- /.navbar-collapse -->\r\n    </div>\r\n    <!-- /.container -->\r\n</nav>"
+module.exports = "<hr>\r\n\r\n<footer>\r\n    <div class=\"container\">\r\n        <div class=\"row\">\r\n            <div class=\"col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1\">\r\n                <ul class=\"list-inline text-center\">\r\n                    <li>\r\n                        <a href=\"{{ twitter }}\">\r\n                            <span class=\"fa-stack fa-lg\">\r\n                                <i class=\"fa fa-circle fa-stack-2x\"></i>\r\n                                <i class=\"fa fa-twitter fa-stack-1x fa-inverse\"></i>\r\n                            </span>\r\n                        </a>\r\n                    </li>\r\n                    <li>\r\n                        <a href=\"{{ linkedin }}\">\r\n                            <span class=\"fa-stack fa-lg\">\r\n                                <i class=\"fa fa-circle fa-stack-2x\"></i>\r\n                                <i class=\"fa fa-linkedin fa-stack-1x fa-inverse\"></i>\r\n                            </span>\r\n                        </a>\r\n                    </li>\r\n                    <li>\r\n                        <a href=\"{{ github }}\">\r\n                            <span class=\"fa-stack fa-lg\">\r\n                                <i class=\"fa fa-circle fa-stack-2x\"></i>\r\n                                <i class=\"fa fa-github fa-stack-1x fa-inverse\"></i>\r\n                            </span>\r\n                        </a>\r\n                    </li>\r\n                </ul>\r\n                <p class=\"copyright text-muted\">Copyright &copy; Anthony Blogs 2017</p>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</footer>\r\n\r\n"
 
 /***/ }),
 
 /***/ 202:
 /***/ (function(module, exports) {
 
+module.exports = "\r\n<!--<header class=\"intro-header\" style=\"background-image: url(app/assets/images/boxes-mail.jpg)\">-->\r\n<header class=\"intro-header\" [style.background-image]=\"'url(' + backgroundImgUrl + ')'\">\r\n    <div class=\"container\">\r\n        <div class=\"row\">\r\n            <div class=\"col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1\">\r\n                <div class=\"page-heading\">\r\n                    <h1>{{ headerMessage }}</h1>\r\n                    <hr class=\"small\">\r\n                    <span class=\"subheading\">{{ subheaderMessage }}</span>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</header>"
+
+/***/ }),
+
+/***/ 203:
+/***/ (function(module, exports) {
+
+module.exports = "<nav class=\"navbar navbar-default navbar-custom navbar-fixed-top\">\r\n    <div class=\"container-fluid\">\r\n        <!-- Brand and toggle get grouped for better mobile display -->\r\n        <div class=\"navbar-header page-scroll\">\r\n            <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\">\r\n                <span class=\"sr-only\">Toggle navigation</span>\r\n                Menu <i class=\"fa fa-bars\"></i>\r\n            </button>\r\n            <a class=\"navbar-brand\" [routerLink]=\"['/blog']\">\r\n                <img [src]=\"thumbNailImage\" class=\"img-circle img-responsive\" width=\"50\" height=\"50\">\r\n            </a>\r\n            \r\n        </div>\r\n\r\n        <!-- Collect the nav links, forms, and other content for toggling -->\r\n        <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\" style=\"border: none\">\r\n            <ul class=\"nav navbar-nav navbar-right\">    \r\n                <li>\r\n                    <a [routerLink]=\"['/blog']\">Blog</a>\r\n                </li>\r\n                <li>\r\n                    <a [routerLink]=\"['/about']\">About</a>\r\n                </li>\r\n                <li>\r\n                    <a [routerLink]=\"['/contact']\">Contact</a>\r\n                </li>\r\n                <li *ngIf=\"loggedIn\">\r\n                    <a [routerLink]=\"['/create']\">Create</a>\r\n                </li>\r\n                <li *ngIf=\"loggedIn\">\r\n                    <a (click)='logout()' id=\"logoutLink\">Logout</a>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n        <!-- /.navbar-collapse -->\r\n    </div>\r\n    <!-- /.container -->\r\n</nav>"
+
+/***/ }),
+
+/***/ 204:
+/***/ (function(module, exports) {
+
 module.exports = "<nav class=\"navbar navbar-default navbar-custom navbar-fixed-top\">\r\n    <div class=\"container-fluid\">\r\n        <!-- Brand and toggle get grouped for better mobile display -->\r\n        <div class=\"navbar-header page-scroll\">\r\n            <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\">\r\n                <span class=\"sr-only\">Toggle navigation</span>\r\n                Menu <i class=\"fa fa-bars\"></i>\r\n            </button>\r\n            <a class=\"navbar-brand\" [routerLink]=\"['/blog']\">\r\n                <img [src]=\"thumbNailImage\" class=\"img-circle img-responsive\" width=\"50\" height=\"50\">\r\n            </a>\r\n            \r\n        </div>\r\n\r\n        <!-- Collect the nav links, forms, and other content for toggling -->\r\n        <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\" style=\"border: none\">\r\n            <ul class=\"nav navbar-nav navbar-right\">\r\n                <li>\r\n                    <a [routerLink]=\"['/blog']\">Blog</a>\r\n                </li>\r\n                <li>\r\n                    <a [routerLink]=\"['/about']\">About</a>\r\n                </li>\r\n                <li>\r\n                    <a [routerLink]=\"['/contact']\">Contact</a>\r\n                </li>\r\n                <li *ngIf=\"loggedIn\">\r\n                    <a [routerLink]=\"['/create']\">Create</a>\r\n                </li>\r\n                <li *ngIf=\"loggedIn\">\r\n                    <a (click)='logout()' id=\"logoutLink\">Logout</a>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n        <!-- /.navbar-collapse -->\r\n    </div>\r\n    <!-- /.container -->\r\n</nav>"
 
 /***/ }),
 
-/***/ 247:
+/***/ 249:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(101);
@@ -977,7 +981,7 @@ var AuthLoginService = (function () {
     return AuthLoginService;
 }());
 AuthLoginService = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]) === "function" && _a || Object])
 ], AuthLoginService);
 
@@ -997,7 +1001,7 @@ var AuthGuard = (function () {
     return AuthGuard;
 }());
 AuthGuard = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
     __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === "function" && _b || Object])
 ], AuthGuard);
 
@@ -1049,7 +1053,7 @@ var BlogPostService = (function () {
     return BlogPostService;
 }());
 BlogPostService = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__shared_shared_service__["a" /* SharedService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__shared_shared_service__["a" /* SharedService */]) === "function" && _b || Object])
 ], BlogPostService);
 
@@ -1111,9 +1115,9 @@ var AboutComponent = (function () {
     return AboutComponent;
 }());
 AboutComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
-        template: __webpack_require__(192),
-        styles: [__webpack_require__(177)]
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        template: __webpack_require__(194),
+        styles: [__webpack_require__(179)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__shared_shared_service__["a" /* SharedService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__shared_shared_service__["a" /* SharedService */]) === "function" && _b || Object])
 ], AboutComponent);
@@ -1179,9 +1183,9 @@ var LoginComponent = (function () {
     return LoginComponent;
 }());
 LoginComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
-        template: __webpack_require__(194),
-        styles: [__webpack_require__(178)]
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        template: __webpack_require__(196),
+        styles: [__webpack_require__(180)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__auth_service__["a" /* AuthLoginService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__auth_service__["a" /* AuthLoginService */]) === "function" && _b || Object])
 ], LoginComponent);
@@ -1252,8 +1256,8 @@ var BlogComponent = (function () {
     return BlogComponent;
 }());
 BlogComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
-        template: __webpack_require__(195),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        template: __webpack_require__(197),
         styles: [__webpack_require__(54)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__blog_service__["a" /* BlogPostService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__blog_service__["a" /* BlogPostService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__shared_shared_service__["a" /* SharedService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__shared_shared_service__["a" /* SharedService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__shared_pagination_service__["a" /* PagerService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__shared_pagination_service__["a" /* PagerService */]) === "function" && _d || Object])
@@ -1318,8 +1322,8 @@ var CreatePostComponent = (function () {
     return CreatePostComponent;
 }());
 CreatePostComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
-        template: __webpack_require__(196),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        template: __webpack_require__(198),
         styles: [__webpack_require__(54)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__blog_service__["a" /* BlogPostService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__blog_service__["a" /* BlogPostService */]) === "function" && _b || Object])
@@ -1358,6 +1362,7 @@ var BlogPostComponent = (function () {
         this._blogPostService = _blogPostService;
         this._sharedService = _sharedService;
         this.twitter = "https://twitter.com/ant_man01";
+        this.pageUrl = 'http://localhost:4200/post/';
     }
     BlogPostComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -1365,6 +1370,7 @@ var BlogPostComponent = (function () {
             var id = params['id'];
             _this._blogPostService.getOnePost(id).subscribe(function (results) {
                 _this.onePost = results;
+                _this.pageIdentifier = id;
             }, function (error) {
                 _this.errorMessage = "Sorry, error occured. Please try refreshing page.";
             });
@@ -1373,9 +1379,9 @@ var BlogPostComponent = (function () {
     return BlogPostComponent;
 }());
 BlogPostComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
-        template: __webpack_require__(197),
-        styles: [__webpack_require__(179), __webpack_require__(54)]
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        template: __webpack_require__(199),
+        styles: [__webpack_require__(181), __webpack_require__(54)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__blog_service__["a" /* BlogPostService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__blog_service__["a" /* BlogPostService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__shared_shared_service__["a" /* SharedService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__shared_shared_service__["a" /* SharedService */]) === "function" && _c || Object])
 ], BlogPostComponent);
@@ -1434,9 +1440,9 @@ var ContactComponent = (function () {
     return ContactComponent;
 }());
 ContactComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
-        template: __webpack_require__(198),
-        styles: [__webpack_require__(180)]
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        template: __webpack_require__(200),
+        styles: [__webpack_require__(182)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__contact_service__["a" /* ContactService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__contact_service__["a" /* ContactService */]) === "function" && _b || Object])
 ], ContactComponent);
@@ -1479,7 +1485,7 @@ var ContactService = (function () {
     return ContactService;
 }());
 ContactService = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__shared_shared_service__["a" /* SharedService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__shared_shared_service__["a" /* SharedService */]) === "function" && _b || Object])
 ], ContactService);
 
@@ -1525,7 +1531,7 @@ var PagerService = (function () {
     return PagerService;
 }());
 PagerService = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])()
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])()
 ], PagerService);
 
 //# sourceMappingURL=pagination.service.js.map
@@ -1546,5 +1552,5 @@ webpackEmptyContext.id = 99;
 
 /***/ })
 
-},[247]);
+},[249]);
 //# sourceMappingURL=main.bundle.js.map
