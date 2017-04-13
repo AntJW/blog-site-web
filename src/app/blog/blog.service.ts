@@ -24,7 +24,8 @@ export class BlogPostService {
     }
  
     createNewBlogPost(postObj: IPosts){
-        return this._http.post(this._postcreateurl, postObj)
+        let userHeaders = this._sharedService.getUserHeaders();
+        return this._http.post(this._postcreateurl, postObj, {headers: userHeaders})
                     .map((r: Response) => r.json());
     }
 

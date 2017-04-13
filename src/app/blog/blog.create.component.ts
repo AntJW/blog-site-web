@@ -42,7 +42,6 @@ export class CreatePostComponent implements OnInit{
                 else{
                     this.errorMessage = 'Something went wrong. Try again.'
                 }
-                
             }
         )
     }

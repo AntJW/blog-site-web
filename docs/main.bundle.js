@@ -36,8 +36,7 @@ var SharedService = (function () {
             'Datetime': JSON.stringify({ DatetimeUTC: currentDatetime, TimeOffset: offset }),
             'Content-Type': 'application/json'
         });
-        var options = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* RequestOptions */]({ headers: headers });
-        return options;
+        return headers;
     };
     return SharedService;
 }());
@@ -880,7 +879,7 @@ module.exports = "<router-outlet></router-outlet>"
 /***/ 196:
 /***/ (function(module, exports) {
 
-module.exports = "<nav-bar></nav-bar>\r\n\r\n<intro-header [backgroundImgUrl]=\"backgroundImgUrl\" [headerMessage]=\"headerMessage\" [subheaderMessage]=\"subheaderMessage\">\r\n</intro-header>\r\n\r\n<div class=\"container\">\r\n  <div class=\"row\">\r\n    <div class=\"col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1\">\r\n      <h1 align=\"center\">GRRRRR!!!</h1>\r\n      <p *ngIf=\"errorMessage\" class=\"alert alert-danger\"> {{ errorMessage }} </p>\r\n      <form (ngSubmit)=\"onSubmit()\" #userSignUpForm=\"ngForm\" novalidate> \r\n\r\n        <div class=\"row control-group\">\r\n            <div class=\"form-group col-xs-12 floating-label-form-group controls\">\r\n                <label>Username</label>\r\n          <input class=\"form-control\" id=\"email\" placeholder=\"Email or Username\" \r\n                  required oninvalid=\"setCustomValidity('testing')\" name=\"email\" [(ngModel)]=\"user.Email\" \r\n                  #email=\"ngModel\" pattern=\"[^%#!$&*()+/|`~=?'\\<>, ]{1,50}\" >\r\n            </div>\r\n            <div [hidden]=\"email.valid || email.pristine\" class=\"alert alert-danger\">\r\n                    Valid email/username required\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"row control-group\">\r\n            <div class=\"form-group col-xs-12 floating-label-form-group controls\">\r\n                <label>Password</label>\r\n          <input type=\"password\" class=\"form-control\" id=\"password\" placeholder=\"Password\" required \r\n                  name=\"password\" [(ngModel)]=\"user.Password\" #password=\"ngModel\"  minlength=\"1\" maxlength=\"50\">\r\n            </div>\r\n            <div [hidden]=\"password.valid || password.pristine\" class=\"alert alert-danger\">\r\n                    Password required\r\n            </div>\r\n        </div>\r\n        <br>\r\n        <div class=\"row\">\r\n          <div class=\"form-group col-xs-12\">\r\n            <button type=\"submit\" class=\"btn btn-default\" [disabled]=\"!userSignUpForm.form.valid\">Login</button>\r\n          </div>\r\n        </div>\r\n      </form>\r\n  </div>\r\n  </div>\r\n</div>\r\n\r\n<footer-section></footer-section>"
+module.exports = "<nav-bar></nav-bar>\r\n\r\n<intro-header [backgroundImgUrl]=\"backgroundImgUrl\" [headerMessage]=\"headerMessage\" [subheaderMessage]=\"subheaderMessage\">\r\n</intro-header>\r\n\r\n<div class=\"container\">\r\n  <div class=\"row\">\r\n    <div class=\"col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1\">\r\n      <p *ngIf=\"errorMessage\" class=\"alert alert-danger\"> {{ errorMessage }} </p>\r\n      <form (ngSubmit)=\"onSubmit()\" #userSignUpForm=\"ngForm\" novalidate> \r\n\r\n        <div class=\"row control-group\">\r\n            <div class=\"form-group col-xs-12 floating-label-form-group controls\">\r\n                <label>Username</label>\r\n          <input class=\"form-control\" id=\"email\" placeholder=\"Email or Username\" \r\n                  required oninvalid=\"setCustomValidity('testing')\" name=\"email\" [(ngModel)]=\"user.Email\" \r\n                  #email=\"ngModel\" pattern=\"[^%#!$&*()+/|`~=?'\\<>, ]{1,50}\" >\r\n            </div>\r\n            <div [hidden]=\"email.valid || email.pristine\" class=\"alert alert-danger\">\r\n                    Valid email/username required\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"row control-group\">\r\n            <div class=\"form-group col-xs-12 floating-label-form-group controls\">\r\n                <label>Password</label>\r\n          <input type=\"password\" class=\"form-control\" id=\"password\" placeholder=\"Password\" required \r\n                  name=\"password\" [(ngModel)]=\"user.Password\" #password=\"ngModel\"  minlength=\"1\" maxlength=\"50\">\r\n            </div>\r\n            <div [hidden]=\"password.valid || password.pristine\" class=\"alert alert-danger\">\r\n                    Password required\r\n            </div>\r\n        </div>\r\n        <br>\r\n        <div class=\"row\">\r\n          <div class=\"form-group col-xs-12\">\r\n            <button type=\"submit\" class=\"btn btn-default\" [disabled]=\"!userSignUpForm.form.valid\">Login</button>\r\n          </div>\r\n        </div>\r\n      </form>\r\n  </div>\r\n  </div>\r\n</div>\r\n\r\n<footer-section></footer-section>"
 
 /***/ }),
 
@@ -902,6 +901,9 @@ module.exports = "<nav-bar></nav-bar>\r\n\r\n<intro-header [backgroundImgUrl]=\"
 /***/ (function(module, exports) {
 
 module.exports = "<nav-bar-invert></nav-bar-invert>\r\n\r\n<div class=\"container\" id=\"text-container\">\r\n    <div class=\"row\">\r\n        <div *ngFor=\"let post of onePost\" class=\"col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1\">\r\n             <p *ngIf=\"errorMessage\" class=\"alert alert-danger\"> \r\n                {{ errorMessage }} <i class=\"fa fa-frown-o\" aria-hidden=\"true\"></i>\r\n            </p>\r\n            <h2 class=\"post-title\"> {{ post.Title }} </h2>\r\n            <p class=\"post-meta\">Posted by <a href=\"{{ twitter }}\">{{ post.Author.FirstName }}</a> | {{ post.CreatedOn | getDatetime | date:'yMMMMd' }}\r\n                <br/> \r\n                \r\n                <span class=\"label label-default\" id=\"post-labels\" *ngFor=\"let tag of post.Tags\">{{ tag }}</span>\r\n               \r\n            </p>\r\n            <div [innerHTML]=\"post.Body\"></div>\r\n        </div>\r\n    </div>\r\n    <div class=\"row\" id=\"disqus-row\">\r\n        <div class=\"col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1\" >\r\n            <disqus-thread [page-identifier]=\"pageIdentifier\" [page-url]=\"pageUrl\"></disqus-thread>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<footer-section></footer-section>\r\n\r\n"
+
+module.exports = "<nav-bar-invert></nav-bar-invert>\r\n\r\n<div class=\"container\" id=\"text-container\">\r\n    <div class=\"row\">\r\n        <div *ngFor=\"let post of onePost\" class=\"col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1\">\r\n             <p *ngIf=\"errorMessage\" class=\"alert alert-danger\"> \r\n                {{ errorMessage }} <i class=\"fa fa-frown-o\" aria-hidden=\"true\"></i>\r\n            </p>\r\n            <h2 class=\"post-title\"> {{ post.Title }} </h2>\r\n            <p class=\"post-meta\">Posted by <a href=\"{{ twitter }}\">{{ post.Author.FirstName }}</a> | {{ post.CreatedOn | getDatetime | date:'yMMMMd' }}\r\n                <br/> \r\n                \r\n                <span class=\"label label-default\" id=\"post-labels\" *ngFor=\"let tag of post.Tags\">{{ tag }}</span>\r\n               \r\n            </p>\r\n            <div [innerHTML]=\"post.Body\"></div>\r\n        </div>\r\n    </div>\r\n    <div class=\"row\" id=\"disqus-row\">\r\n        <div class=\"col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1\" >\r\n            <disqus-thread [page-title]=\"test2\" [page-identifier]=\"pageIdentifier\" [page-url]=\"pageUrl\"></disqus-thread>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<footer-section></footer-section>\r\n\r\n"
+
 
 /***/ }),
 
@@ -1047,7 +1049,8 @@ var BlogPostService = (function () {
             .map(function (r) { return r.json(); });
     };
     BlogPostService.prototype.createNewBlogPost = function (postObj) {
-        return this._http.post(this._postcreateurl, postObj)
+        var userHeaders = this._sharedService.getUserHeaders();
+        return this._http.post(this._postcreateurl, postObj, { headers: userHeaders })
             .map(function (r) { return r.json(); });
     };
     return BlogPostService;
@@ -1153,7 +1156,9 @@ var LoginComponent = (function () {
     function LoginComponent(route, _authservice) {
         this.route = route;
         this._authservice = _authservice;
-        this.backgroundImgUrl = "assets/images/beware-of-dog.jpg";
+        this.backgroundImgUrl = "assets/images/all-black-background.jpg";
+        this.headerMessage = "Beware Of Dog";
+        this.subheaderMessage = "GRRRRRRRRRR!!!";
         this.user = new __WEBPACK_IMPORTED_MODULE_3__auth_model__["a" /* IUser */]();
     }
     LoginComponent.prototype.ngOnInit = function () {
@@ -1362,7 +1367,11 @@ var BlogPostComponent = (function () {
         this._blogPostService = _blogPostService;
         this._sharedService = _sharedService;
         this.twitter = "https://twitter.com/ant_man01";
+
         this.pageUrl = 'http://localhost:4200/post/';
+
+        this.pageUrl = 'http://anthonyjw.com/post/';
+
     }
     BlogPostComponent.prototype.ngOnInit = function () {
         var _this = this;

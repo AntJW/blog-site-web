@@ -9,7 +9,9 @@ import { IUser } from './auth.model';
     styleUrls: ['./auth.login.component.css']
 })
 export class LoginComponent implements OnInit{
-    backgroundImgUrl: string = "assets/images/beware-of-dog.jpg";
+    backgroundImgUrl: string = "assets/images/all-black-background.jpg";
+    headerMessage: string = "Beware Of Dog";
+    subheaderMessage: string = "GRRRRRRRRRR!!!";
     user = new IUser();
     errorMessage: string;
 
