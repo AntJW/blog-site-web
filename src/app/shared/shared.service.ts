@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Http, Response, Headers, RequestOptions } from '@angular/http';
+import { Http, Response, Headers } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 
 
@@ -24,10 +24,8 @@ export class SharedService {
                                     'Datetime': JSON.stringify({DatetimeUTC: currentDatetime, TimeOffset: offset}),
                                     'Content-Type': 'application/json'
                                 });
-        
-        let options = new RequestOptions({ headers: headers});
 
-        return options
+        return headers
     }
 
 }

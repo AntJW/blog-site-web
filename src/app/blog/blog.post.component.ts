@@ -15,7 +15,7 @@ export class BlogPostComponent implements OnInit {
     twitter: string = "https://twitter.com/ant_man01";
     errorMessage: string;
     pageIdentifier: string;
-    pageUrl: string = 'http://localhost:4200/post/'
+    pageUrl: string = 'http://anthonyjw.com/post/'
     constructor(private _activatedRoute: ActivatedRoute, private _blogPostService: BlogPostService, 
                 private _sharedService: SharedService) {}
 
